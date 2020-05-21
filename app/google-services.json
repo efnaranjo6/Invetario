@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "938185794175",
+    "firebase_url": "https://invapp-86579.firebaseio.com",
+    "project_id": "invapp-86579",
+    "storage_bucket": "invapp-86579.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:938185794175:android:026150cc1fc0aeb704d54a",
+        "android_client_info": {
+          "package_name": "com.example.invetario"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "938185794175-u2ol4b0623v7uab07sqbo1oekrnd6old.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCpm8EfmxdACUKp_w23NbioK7I7fYJAT0Q"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "938185794175-u2ol4b0623v7uab07sqbo1oekrnd6old.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
