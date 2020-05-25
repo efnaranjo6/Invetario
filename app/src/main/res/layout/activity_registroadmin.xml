@@ -51,14 +51,14 @@
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:id="@+id/constraintLayout"
-            android:layout_width="412dp"
-            android:layout_height="678dp"
+            android:layout_width="0dp"
+            android:layout_height="670dp"
             android:background="@drawable/panel_blanco_redondeado"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btnVolver"
             app:layout_constraintVertical_bias="1.0">
 
             <TextView
@@ -66,13 +66,14 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
 
+                android:layout_marginTop="12dp"
                 android:text="Repetir la contraseña"
                 android:textColor="@color/colorYellow"
                 android:textSize="20sp"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.19"
                 app:layout_constraintStart_toStartOf="parent"
-                tools:layout_editor_absoluteY="466dp" />
+                app:layout_constraintTop_toBottomOf="@+id/txtContra" />
 
             <TextView
                 android:id="@+id/lblU8"
@@ -235,7 +236,6 @@
                 app:layout_constraintVertical_bias="0.025" />
 
             <EditText
-                android:padding="10dp"
                 android:id="@+id/txtRepita"
                 android:layout_width="354dp"
                 android:layout_height="39dp"
@@ -243,6 +243,7 @@
                 android:ems="10"
                 android:hint="Repita la contraeña"
                 android:inputType="textPersonName"
+                android:padding="10dp"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.448"
                 app:layout_constraintStart_toStartOf="parent"
@@ -253,8 +254,6 @@
                 android:layout_width="154dp"
                 android:layout_height="37dp"
                 android:background="@drawable/panel_btn"
-                android:paddingLeft="40dp"
-                android:paddingTop="8dp"
                 android:text="Continuar"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
