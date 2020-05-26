@@ -54,11 +54,11 @@
                 app:layout_constraintTop_toBottomOf="@+id/lblU3" />
 
             <TextView
-                android:id="@+id/textView"
+                android:id="@+id/textCerrarSesion"
                 android:layout_width="161dp"
                 android:layout_height="37dp"
                 android:fontFamily="sans-serif"
-                android:text="Inicio Sesion"
+                android:text="Inicio Sesión"
                 android:textColor="@color/colorYellow"
                 android:textSize="28sp"
                 app:layout_constraintBottom_toBottomOf="parent"
@@ -93,7 +93,7 @@
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.152"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/textView" />
+                app:layout_constraintTop_toBottomOf="@+id/textCerrarSesion" />
 
             <EditText
                 android:id="@+id/txtContra"

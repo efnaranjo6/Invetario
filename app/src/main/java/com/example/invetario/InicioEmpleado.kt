@@ -22,5 +22,10 @@ class InicioEmpleado : AppCompatActivity() {
             val intent:Intent = Intent(this, OlvidoContraAdmin::class.java)
             startActivity(intent)
         }
+        btnIngresar.setOnClickListener{
+            val intent:Intent = Intent(this, MenuEmpleado::class.java)
+            startActivity(intent)
+        }
+
     }
 }

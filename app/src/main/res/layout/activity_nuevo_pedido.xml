@@ -4,7 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".RegistroAdmin">
+    tools:context=".NuevoPedido">
+
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="0dp"
         android:layout_height="0dp"
@@ -54,6 +55,7 @@
             android:layout_width="0dp"
             android:layout_height="670dp"
             android:background="@drawable/panel_blanco_redondeado"
+            android:backgroundTint="#FFFFFF"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.0"
@@ -62,26 +64,12 @@
             app:layout_constraintVertical_bias="1.0">
 
             <TextView
-                android:id="@+id/lblU9"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-
-                android:layout_marginTop="12dp"
-                android:text="Repetir la contraseña"
-                android:textColor="@color/colorYellow"
-                android:textSize="20sp"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.19"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/txtContra" />
-
-            <TextView
                 android:id="@+id/lblU8"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
 
                 android:layout_marginTop="8dp"
-                android:text="Contraseña"
+                android:text="Descripción"
                 android:textColor="@color/colorYellow"
                 android:textSize="20sp"
                 app:layout_constraintEnd_toEndOf="parent"
@@ -95,7 +83,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="12dp"
 
-                android:text="Cedula"
+                android:text="Nombre"
                 android:textColor="@color/colorYellow"
                 android:textSize="20sp"
                 app:layout_constraintEnd_toEndOf="parent"
@@ -109,21 +97,21 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="8dp"
 
-                android:text="Correo elctronico"
+                android:text="Precio"
                 android:textColor="@color/colorYellow"
                 android:textSize="20sp"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.162"
+                app:layout_constraintHorizontal_bias="0.127"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/txtCedula" />
 
             <EditText
                 android:id="@+id/txtContra"
-                android:layout_width="359dp"
-                android:layout_height="39dp"
+                android:layout_width="368dp"
+                android:layout_height="91dp"
                 android:background="@drawable/panel_txt_redondeado"
                 android:ems="10"
-                android:hint="Escriba aqui la contraseña"
+                android:hint="Escriba aqui la descripción"
                 android:inputType="textPersonName"
                 android:padding="10sp"
                 android:textColor="#4A4A4A"
@@ -138,7 +126,7 @@
                 android:layout_height="39dp"
                 android:background="@drawable/panel_txt_redondeado"
                 android:ems="10"
-                android:hint="Escriba aqui el correo"
+                android:hint="Escriba aqui el precio"
                 android:inputType="textPersonName"
                 android:padding="10sp"
                 android:textColor="#4A4A4A"
@@ -153,7 +141,7 @@
                 android:layout_height="39dp"
                 android:background="@drawable/panel_txt_redondeado"
                 android:ems="10"
-                android:hint="Escriba aqui la cedula"
+                android:hint="Escriba aquí el nombre"
                 android:inputType="textPersonName"
                 android:padding="10sp"
                 android:textColor="#4A4A4A"
@@ -168,7 +156,7 @@
                 android:layout_height="39dp"
                 android:background="@drawable/panel_txt_redondeado"
                 android:ems="10"
-                android:hint="Escriba aqui el Apellido"
+                android:hint="Escriba aqui el estado"
                 android:inputType="textPersonName"
                 android:padding="10sp"
                 android:textColor="#4A4A4A"
@@ -182,7 +170,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="104dp"
-                android:text="Apellido"
+                android:text="Estado"
 
                 android:textColor="@color/colorYellow"
                 android:textSize="20sp"
@@ -191,27 +179,12 @@
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/textCerrarSesion" />
 
-            <EditText
-                android:id="@+id/txtNombre"
-                android:layout_width="357dp"
-                android:layout_height="39dp"
-                android:background="@drawable/panel_txt_redondeado"
-                android:ems="10"
-                android:hint="Escriba aqui el nombre"
-                android:inputType="textPersonName"
-                android:padding="10sp"
-                android:textColor="#4A4A4A"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.51"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/lblNombre" />
-
             <TextView
                 android:id="@+id/lblNombre"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="32dp"
-                android:text="Nombre"
+                android:text="Fecha"
 
                 android:textColor="@color/colorYellow"
                 android:textSize="20sp"
@@ -222,10 +195,10 @@
 
             <TextView
                 android:id="@+id/textCerrarSesion"
-                android:layout_width="104dp"
-                android:layout_height="39dp"
+                android:layout_width="182dp"
+                android:layout_height="43dp"
                 android:fontFamily="sans-serif"
-                android:text="Registro"
+                android:text="Nuevo Pedido"
                 android:textColor="@color/colorYellow"
                 android:textSize="28sp"
                 app:layout_constraintBottom_toBottomOf="parent"
@@ -235,34 +208,51 @@
                 app:layout_constraintTop_toTopOf="parent"
                 app:layout_constraintVertical_bias="0.025" />
 
-            <EditText
-                android:id="@+id/txtRepita"
-                android:layout_width="354dp"
-                android:layout_height="39dp"
-                android:background="@drawable/panel_txt_redondeado"
-                android:ems="10"
-                android:hint="Repita la contraeña"
-                android:inputType="textPersonName"
-                android:padding="10dp"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.448"
+            <TextView
+                android:id="@+id/dateTv"
+                android:layout_width="262dp"
+                android:layout_height="38dp"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="11dp"
+                android:layout_marginBottom="4dp"
+                android:background="@color/colorGrey"
+                android:backgroundTint="@color/colorGrey"
+                android:text="Seleccione la fecha"
+                android:textSize="18dp"
+                app:layout_constraintBottom_toTopOf="@+id/lblU4"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/lblU9" />
+                app:layout_constraintTop_toBottomOf="@+id/lblNombre"
+                app:layout_constraintVertical_bias="1.0" />
 
             <Button
-                android:id="@+id/btnContinuar"
-                android:layout_width="154dp"
-                android:layout_height="37dp"
+                android:id="@+id/btn3"
+                android:layout_width="56dp"
+                android:layout_height="55dp"
+                android:layout_marginStart="37dp"
+                android:layout_marginTop="48dp"
+                android:layout_marginEnd="24dp"
+                android:layout_marginBottom="30dp"
+                android:background="@drawable/ic_icon_awesome_calendar_alt"
+                app:layout_constraintBottom_toTopOf="@+id/txtApellido"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toEndOf="@+id/dateTv"
+                app:layout_constraintTop_toBottomOf="@+id/textCerrarSesion"
+                app:layout_constraintVertical_bias="1.0" />
+
+            <Button
+                android:id="@+id/btnContinuarP"
+                android:layout_width="200dp"
+                android:layout_height="48dp"
                 android:background="@drawable/panel_btn"
-                android:text="Continuar"
+                android:text="Guardar"
+                android:textSize="20dp"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.498"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/txtRepita"
-                app:layout_constraintVertical_bias="0.557" />
+                app:layout_constraintTop_toBottomOf="@+id/txtContra" />
+
         </androidx.constraintlayout.widget.ConstraintLayout>
 
     </androidx.constraintlayout.widget.ConstraintLayout>
-
 </androidx.constraintlayout.widget.ConstraintLayout>

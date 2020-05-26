@@ -9,9 +9,23 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".ActivityHuella"
-            android:theme="@style/Theme.AppCompat.NoActionBar"
-            ></activity>
+        <activity android:name=".InventarioEm"></activity>
+        <activity android:name=".InventarioEmplea" />
+        <activity android:name=".InventarioEmple" />
+        <activity android:name=".NuevoPedido" />
+        <activity android:name=".PedidoEmp" />
+        <activity android:name=".Pedidos" />
+        <activity android:name=".InventarioEmp" />
+        <activity android:name=".NuevaContra" />
+        <activity android:name=".CambioContra" />
+        <activity android:name=".CambioC" />
+        <activity
+            android:name=".MenuEmpleado"
+            android:label="@string/title_activity_menu_empleado"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".ActivityHuella"
+            android:theme="@style/Theme.AppCompat.NoActionBar" />
         <activity
             android:name=".InicioEmpleado"
             android:theme="@style/Theme.AppCompat.NoActionBar" />
