@@ -31,18 +31,6 @@
             app:layout_constraintVertical_bias="0.159">
 
             <ImageView
-                android:id="@+id/imageView"
-                android:layout_width="213dp"
-                android:layout_height="169dp"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.501"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintVertical_bias="0.024"
-                app:srcCompat="@drawable/ic_social" />
-
-            <ImageView
                 android:id="@+id/imageView5"
                 android:layout_width="412dp"
                 android:layout_height="249dp"
@@ -51,7 +39,7 @@
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintVertical_bias="0.616"
+                app:layout_constraintVertical_bias="0.57"
                 app:srcCompat="@drawable/panel_amarillo" />
 
             <EditText
@@ -112,33 +100,48 @@
                 app:layout_constraintVertical_bias="0.187" />
 
             <Button
+                android:id="@+id/btnGuardarFoto"
+                android:layout_width="290dp"
+                android:layout_height="62dp"
+                android:backgroundTint="#FFB700"
+                android:drawableTint="#FFFFFF"
+                android:orientation="horizontal"
+                android:text="Guardar"
+                android:textSize="20sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imageView5"
+                app:layout_constraintVertical_bias="0.157" />
+
+            <Button
                 android:id="@+id/btnCambiarCon"
                 android:layout_width="290dp"
                 android:layout_height="62dp"
                 android:backgroundTint="#FFB700"
                 android:drawableTint="#FFFFFF"
                 android:orientation="horizontal"
-                android:text="Cambiar contraseña"
+                android:text="Cambiar Contraseña"
                 android:textSize="20sp"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/imageView5"
-                app:layout_constraintVertical_bias="0.41" />
+                app:layout_constraintVertical_bias="0.699" />
 
             <Button
-                android:id="@+id/btnCSEm"
-                android:layout_width="197dp"
-                android:layout_height="42dp"
-                android:layout_marginBottom="20dp"
-                android:background="@drawable/panel_btn"
-                android:text="Cerrar sesión"
+                android:id="@+id/btnCambiarFoto"
+                android:layout_width="180dp"
+                android:layout_height="174dp"
+                android:layout_marginBottom="84dp"
+                android:background="@drawable/ic_social"
+                android:text="Cambiar foto"
                 app:layout_constraintBottom_toTopOf="@+id/imageView5"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.501"
+                app:layout_constraintHorizontal_bias="0.502"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/imageView"
-                app:layout_constraintVertical_bias="0.4" />
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="1.0" />
 
         </androidx.constraintlayout.widget.ConstraintLayout>
 

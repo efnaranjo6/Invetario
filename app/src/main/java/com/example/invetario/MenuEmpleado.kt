@@ -16,7 +16,7 @@ class MenuEmpleado : AppCompatActivity() {
             val intent:Intent = Intent(this, InicioEmpleado::class.java)
             startActivity(intent)
         }
-        btnPerE.setOnClickListener{
+        btnPerEm.setOnClickListener{
             val intent:Intent = Intent(this, CambioContra::class.java)
             startActivity(intent)
         }

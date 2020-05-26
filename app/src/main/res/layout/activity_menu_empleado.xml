@@ -28,7 +28,7 @@
             app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.153">
+            app:layout_constraintVertical_bias="0.181">
 
             <ImageView
                 android:id="@+id/imageView5"
@@ -53,7 +53,7 @@
                 android:layout_marginBottom="9dp"
                 android:ems="10"
                 android:inputType="textPersonName"
-                android:text="Name"
+                android:text="Nombre"
                 app:layout_constraintBottom_toTopOf="@+id/editText3"
                 app:layout_constraintEnd_toEndOf="@+id/imageView5"
                 app:layout_constraintHorizontal_bias="0.0"
@@ -71,7 +71,7 @@
                 android:layout_marginBottom="141dp"
                 android:ems="10"
                 android:inputType="textPersonName"
-                android:text="Name"
+                android:text="Apellido"
                 app:layout_constraintBottom_toBottomOf="@+id/imageView5"
                 app:layout_constraintEnd_toEndOf="@+id/imageView5"
                 app:layout_constraintHorizontal_bias="0.0"
@@ -89,7 +89,7 @@
                 android:layout_marginBottom="24dp"
                 android:ems="10"
                 android:inputType="textPersonName"
-                android:text="Name"
+                android:text="Codigo"
                 app:layout_constraintBottom_toBottomOf="@+id/imageView5"
                 app:layout_constraintEnd_toEndOf="@+id/imageView5"
                 app:layout_constraintHorizontal_bias="0.0"
@@ -152,13 +152,13 @@
                 app:layout_constraintVertical_bias="1.0" />
 
             <Button
-                android:id="@+id/btnPerE"
-                android:layout_width="126dp"
-                android:layout_height="117dp"
-                android:layout_marginTop="32dp"
+                android:id="@+id/btnPerEm"
+                android:layout_width="163dp"
+                android:layout_height="144dp"
+                android:layout_marginTop="16dp"
                 android:background="@drawable/ic_social"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.501"
+                app:layout_constraintHorizontal_bias="0.502"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
 
