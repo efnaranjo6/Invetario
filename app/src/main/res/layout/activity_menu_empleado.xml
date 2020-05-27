@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MenuEmpleado">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="513dp"
+        android:layout_height="916dp"
+        android:background="@drawable/panel_amarillo"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/constraintLayout"
+            android:layout_width="410dp"
+            android:layout_height="701dp"
+
+            android:background="@drawable/panel_blanco_redondeado"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.181">
+
+            <ImageView
+                android:id="@+id/imageView5"
+                android:layout_width="408dp"
+                android:layout_height="209dp"
+                android:adjustViewBounds="true"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.463"
+                app:srcCompat="@drawable/panel_amarillo" />
+
+            <EditText
+                android:id="@+id/editText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="1dp"
+                android:layout_marginEnd="182dp"
+                android:layout_marginBottom="9dp"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:text="Nombre"
+                app:layout_constraintBottom_toTopOf="@+id/editText3"
+                app:layout_constraintEnd_toEndOf="@+id/imageView5"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/imageView5"
+                app:layout_constraintTop_toTopOf="@+id/imageView5"
+                app:layout_constraintVertical_bias="0.594" />
+
+            <EditText
+                android:id="@+id/editText3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="18dp"
+                android:layout_marginTop="92dp"
+                android:layout_marginEnd="180dp"
+                android:layout_marginBottom="141dp"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:text="Apellido"
+                app:layout_constraintBottom_toBottomOf="@+id/imageView5"
+                app:layout_constraintEnd_toEndOf="@+id/imageView5"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/imageView5"
+                app:layout_constraintTop_toTopOf="@+id/imageView5"
+                app:layout_constraintVertical_bias="0.0" />
+
+            <EditText
+                android:id="@+id/editText4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="18dp"
+                android:layout_marginTop="11dp"
+                android:layout_marginEnd="180dp"
+                android:layout_marginBottom="24dp"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:text="Codigo"
+                app:layout_constraintBottom_toBottomOf="@+id/imageView5"
+                app:layout_constraintEnd_toEndOf="@+id/imageView5"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/imageView5"
+                app:layout_constraintTop_toBottomOf="@+id/editText3"
+                app:layout_constraintVertical_bias="0.262" />
+
+            <TextView
+                android:id="@+id/textInvv2"
+                android:layout_width="119dp"
+                android:layout_height="38dp"
+                android:fontFamily="sans-serif"
+                android:text="Pedidos"
+                android:textColor="@color/colorYellow"
+                android:textSize="28sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.841"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/btnPedE"
+                app:layout_constraintVertical_bias="0.147" />
+
+            <TextView
+                android:id="@+id/textInvv"
+                android:layout_width="143dp"
+                android:layout_height="40dp"
+                android:layout_marginBottom="56dp"
+                android:fontFamily="sans-serif"
+                android:text="Inventario"
+                android:textColor="@color/colorYellow"
+                android:textSize="28sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.24"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <Button
+                android:id="@+id/btnPedE"
+                android:layout_width="86dp"
+                android:layout_height="81dp"
+                android:layout_marginTop="80dp"
+                android:layout_marginEnd="68dp"
+                android:background="@drawable/icon_pedido"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imageView5" />
+
+            <Button
+                android:id="@+id/btnCeSe"
+                android:layout_width="149dp"
+                android:layout_height="31dp"
+                android:layout_marginTop="49dp"
+                android:layout_marginBottom="18dp"
+                android:background="@color/colorYellow"
+                android:text="Cerrar Sesión"
+                app:layout_constraintBottom_toTopOf="@+id/imageView5"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.501"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/btnPerE"
+                app:layout_constraintVertical_bias="1.0" />
+
+            <Button
+                android:id="@+id/btnPerEm"
+                android:layout_width="163dp"
+                android:layout_height="144dp"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/ic_social"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.502"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <Button
+                android:id="@+id/btnInvenE"
+                android:layout_width="94dp"
+                android:layout_height="74dp"
+                android:layout_marginTop="104dp"
+                android:background="@drawable/icon_inventario"
+                app:layout_constraintBottom_toTopOf="@+id/textInvv"
+                app:layout_constraintEnd_toStartOf="@+id/btnPedE"
+                app:layout_constraintHorizontal_bias="0.493"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/editText4"
+                app:layout_constraintVertical_bias="0.029" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.0013679891" />
+</androidx.constraintlayout.widget.ConstraintLayout>

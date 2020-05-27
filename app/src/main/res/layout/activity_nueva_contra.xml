@@ -4,53 +4,59 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".OlvidoContraAdmin">
+    tools:context=".NuevaContra">
+
     <androidx.constraintlayout.widget.ConstraintLayout
-        android:layout_width="0dp"
-        android:layout_height="0dp"
+        android:layout_width="504dp"
+        android:layout_height="905dp"
         android:background="@drawable/panel_amarillo"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.075"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.028" >
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:id="@+id/constraintLayout"
-            android:layout_width="412dp"
-            android:layout_height="585dp"
+            android:layout_width="418dp"
+            android:layout_height="708dp"
 
             android:background="@drawable/panel_blanco_redondeado"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintHorizontal_bias="0.023"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="1.0">
+            app:layout_constraintVertical_bias="0.126">
 
             <TextView
                 android:id="@+id/textCerrarSesion"
                 android:layout_width="279dp"
                 android:layout_height="39dp"
                 android:fontFamily="sans-serif"
-                android:text="Recuperar contraseña"
+                android:text="Cambiar contraseña"
                 android:textColor="@color/colorYellow"
                 android:textSize="28sp"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.503"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintVertical_bias="0.042" />
+                app:layout_constraintVertical_bias="0.068" />
 
             <EditText
                 android:id="@+id/editText5"
                 android:layout_width="338dp"
                 android:layout_height="47dp"
+                android:layout_marginTop="32dp"
                 android:background="@drawable/panel_txt_redondeado"
                 android:ems="10"
-                android:hint="Escriba el pin"
+                android:hint="Escriba antigua contraseña"
                 android:inputType="textPersonName"
                 android:padding="10sp"
                 app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.525"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/textView4" />
 
@@ -58,12 +64,12 @@
                 android:id="@+id/textView4"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="16dp"
-                android:text="Pin"
+                android:layout_marginTop="40dp"
+                android:text="Antigua Contraseña"
                 android:textColor="@color/colorYellow"
                 android:textSize="20sp"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.133"
+                app:layout_constraintHorizontal_bias="0.179"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/textCerrarSesion" />
 
@@ -71,12 +77,12 @@
                 android:id="@+id/textView6"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="12dp"
+                android:layout_marginTop="36dp"
                 android:text="Nueva contraseña"
                 android:textColor="@color/colorYellow"
                 android:textSize="20sp"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.204"
+                app:layout_constraintHorizontal_bias="0.149"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/editText5" />
 
@@ -84,12 +90,14 @@
                 android:id="@+id/editText6"
                 android:layout_width="341dp"
                 android:layout_height="43dp"
+                android:layout_marginTop="32dp"
                 android:background="@drawable/panel_txt_redondeado"
                 android:ems="10"
                 android:hint="Escriba la nueva contraseña"
                 android:inputType="textPersonName"
                 android:padding="10sp"
                 app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.493"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/textView6" />
 
@@ -97,12 +105,12 @@
                 android:id="@+id/textView7"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="8dp"
+                android:layout_marginTop="40dp"
                 android:text="Repetri contraseña"
                 android:textColor="@color/colorYellow"
                 android:textSize="20sp"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.21"
+                app:layout_constraintHorizontal_bias="0.153"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/editText6" />
 
@@ -110,12 +118,14 @@
                 android:id="@+id/editText7"
                 android:layout_width="341dp"
                 android:layout_height="41dp"
+                android:layout_marginTop="32dp"
                 android:background="@drawable/panel_txt_redondeado"
                 android:ems="10"
                 android:hint="Confirme la contraseña"
                 android:inputType="textPersonName"
                 android:padding="10sp"
                 app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.493"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/textView7" />
 
@@ -123,49 +133,17 @@
                 android:id="@+id/btnConfiE"
                 android:layout_width="226dp"
                 android:layout_height="49dp"
-                android:layout_marginBottom="28dp"
+                android:layout_marginTop="66dp"
+                android:layout_marginBottom="84dp"
                 android:background="@drawable/panel_btn"
-                android:text="Recuperar"
+                android:text="Confirmar"
                 android:textColor="#FFFFFF"
+                android:textSize="24sp"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent" />
-
-        </androidx.constraintlayout.widget.ConstraintLayout>
-
-        <androidx.constraintlayout.widget.ConstraintLayout
-            android:id="@+id/btnVolver"
-            android:layout_width="103dp"
-            android:layout_height="44dp"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.0"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent">
-
-            <ImageView
-                android:id="@+id/imageView3"
-                android:layout_width="37dp"
-                android:layout_height="39dp"
-                android:tint="@color/colorWhite"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toStartOf="@+id/textView5"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent"
-                app:srcCompat="?attr/homeAsUpIndicator" />
+                app:layout_constraintTop_toBottomOf="@+id/editText7" />
 
-            <TextView
-                android:id="@+id/textView5"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Volver"
-                android:textColor="@color/colorWhite"
-                android:textSize="20sp"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintTop_toTopOf="parent" />
         </androidx.constraintlayout.widget.ConstraintLayout>
     </androidx.constraintlayout.widget.ConstraintLayout>
-
-
-
 </androidx.constraintlayout.widget.ConstraintLayout>
