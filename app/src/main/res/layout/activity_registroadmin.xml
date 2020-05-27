@@ -56,10 +56,10 @@
             android:background="@drawable/panel_blanco_redondeado"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintHorizontal_bias="1.0"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="1.0">
+            app:layout_constraintVertical_bias="0.0">
 
             <TextView
                 android:id="@+id/lblU9"
@@ -235,7 +235,6 @@
                 app:layout_constraintVertical_bias="0.025" />
 
             <EditText
-                android:padding="10dp"
                 android:id="@+id/txtRepita"
                 android:layout_width="354dp"
                 android:layout_height="39dp"
@@ -243,6 +242,7 @@
                 android:ems="10"
                 android:hint="Repita la contraeña"
                 android:inputType="textPersonName"
+                android:padding="10dp"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.448"
                 app:layout_constraintStart_toStartOf="parent"
