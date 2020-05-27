@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     package="com.example.invetario">
 
     <application
@@ -9,16 +10,13 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".InventarioEm"></activity>
-        <activity android:name=".InventarioEmplea" />
-        <activity android:name=".InventarioEmple" />
-        <activity android:name=".NuevoPedido" />
-        <activity android:name=".PedidoEmp" />
-        <activity android:name=".Pedidos" />
-        <activity android:name=".InventarioEmp" />
-        <activity android:name=".NuevaContra" />
-        <activity android:name=".CambioContra" />
-        <activity android:name=".CambioC" />
+        <activity android:name=".InventarioEm"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
+        <activity android:name=".NuevoPedido" android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".PedidoEmp" android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".NuevaContra" android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".CambioContra" android:theme="@style/AppTheme.NoActionBar" />
+
         <activity
             android:name=".MenuEmpleado"
             android:label="@string/title_activity_menu_empleado"

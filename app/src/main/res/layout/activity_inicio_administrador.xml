@@ -41,8 +41,8 @@
 
             <EditText
                 android:id="@+id/txtCuenta"
-                android:layout_width="359dp"
-                android:layout_height="47dp"
+                android:layout_width="361dp"
+                android:layout_height="49dp"
                 android:background="@drawable/panel_txt_redondeado"
                 android:ems="10"
                 android:hint="Escriba aqui el usuario"
@@ -97,8 +97,8 @@
 
             <EditText
                 android:id="@+id/txtContra"
-                android:layout_width="359dp"
-                android:layout_height="47dp"
+                android:layout_width="357dp"
+                android:layout_height="44dp"
                 android:background="@drawable/panel_txt_redondeado"
                 android:ems="10"
                 android:hint="Escriba aqui el usuario"

@@ -21,27 +21,20 @@ class RegistroAdmin : AppCompatActivity() {
     lateinit var txtContra: EditText
     lateinit var txtRepita: EditText
     lateinit var btnContinuar: Button
-
     override fun onCreate(savedInstanceState: Bundle?) {
-
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_registroadmin)
-
         txtNombre = findViewById(R.id.txtNombre)
         txtApellido = findViewById(R.id.txtApellido)
         txtCedula = findViewById(R.id.txtCedula)
         txtContra = findViewById(R.id.txtContra)
         txtRepita = findViewById(R.id.txtRepita)
         btnContinuar = findViewById(R.id.btnContinuar)
-
-
-
         btnContinuar.setOnClickListener {
             guardarPersona()
             val intent: Intent = Intent(this, RegistroAdmin::class.java)
             startActivity(intent)
         }
-
     }
     private fun guardarPersona(){
         val nombre = txtNombre.text.toString().trim()
@@ -49,14 +42,12 @@ class RegistroAdmin : AppCompatActivity() {
         val cedula = txtCedula.text.toString().trim()
         val correo = txtCorreo.text.toString().trim()
         val contraseña = txtNombre.text.toString().trim()
-
         val ref = FirebaseDatabase.getInstance().getReference("Personas")
         val personaId = ref.push().key
         val id = personaId.toString()
         val persona = Persona(id,nombre,apellido,cedula,correo,contraseña)
         ref.child(id).setValue(persona).addOnCompleteListener{
             Toast.makeText(applicationContext, " Persona guardada", Toast.LENGTH_LONG).show()
-
         }
     }
 }
