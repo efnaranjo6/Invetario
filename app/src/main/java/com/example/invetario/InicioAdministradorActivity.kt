@@ -3,6 +3,7 @@ package com.example.invetario
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import com.google.firebase.auth.FirebaseAuth
 import kotlinx.android.synthetic.main.activity_inicio_administrador.*
 
 class InicioAdministradorActivity : AppCompatActivity() {
@@ -19,8 +20,19 @@ class InicioAdministradorActivity : AppCompatActivity() {
             startActivity(intent)
         }
         btnIngresar.setOnClickListener {
-            val intent:Intent = Intent(this, InterfazAdmin::class.java)
-            startActivity(intent)
+
+            if  (txtCuenta.text.isNotEmpty() &&  txtContra.text.isNotEmpty()){
+                FirebaseAuth.getInstance()
+                    .signInWithEmailAndPassword(txtCuenta.text.toString(),
+                        txtContra.text.toString()).addOnCompleteListener{
+                        if (it.isSuccessful){
+                            val intent:Intent = Intent(this, InterfazAdmin::class.java)
+                            startActivity(intent)
+                        }
+
+                    }
+            }
+
         }
 
         btnRegistro.setOnClickListener {

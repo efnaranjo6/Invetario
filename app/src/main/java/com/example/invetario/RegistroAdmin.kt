@@ -8,13 +8,14 @@ import android.widget.Button
 import android.widget.EditText
 import android.widget.TextView
 import android.widget.Toast
+import androidx.appcompat.app.AlertDialog
+import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.database.DatabaseReference
 import com.google.firebase.database.FirebaseDatabase
 import kotlinx.android.synthetic.main.activity_olvido_admin.*
 import kotlinx.android.synthetic.main.activity_registroadmin.*
 
 class RegistroAdmin : AppCompatActivity() {
-
     lateinit var txtNombre: EditText
     lateinit var txtApellido: EditText
     lateinit var txtCedula: EditText
@@ -32,8 +33,8 @@ class RegistroAdmin : AppCompatActivity() {
         btnContinuar = findViewById(R.id.btnContinuar)
         btnContinuar.setOnClickListener {
             guardarPersona()
-            val intent: Intent = Intent(this, RegistroAdmin::class.java)
-            startActivity(intent)
+
+
         }
     }
     private fun guardarPersona(){
@@ -41,13 +42,37 @@ class RegistroAdmin : AppCompatActivity() {
         val apellido = txtApellido.text.toString().trim()
         val cedula = txtCedula.text.toString().trim()
         val correo = txtCorreo.text.toString().trim()
-        val contraseña = txtNombre.text.toString().trim()
+        val contraseña = txtContra.text.toString().trim()
         val ref = FirebaseDatabase.getInstance().getReference("Personas")
         val personaId = ref.push().key
         val id = personaId.toString()
         val persona = Persona(id,nombre,apellido,cedula,correo,contraseña)
         ref.child(id).setValue(persona).addOnCompleteListener{
             Toast.makeText(applicationContext, " Persona guardada", Toast.LENGTH_LONG).show()
+            if  (txtCorreo.text.isNotEmpty() &&  txtContra.text.isNotEmpty()){
+                FirebaseAuth.getInstance()
+                    .createUserWithEmailAndPassword(txtCorreo.text.toString(),
+                        txtContra.text.toString()).addOnCompleteListener{
+                        if (it.isSuccessful){
+                            login()
+                        }
+                        else{
+                            mostrar()
+                        }
+                    }
         }
     }
+}
+    private fun mostrar(){
+        val builder = AlertDialog.Builder(this)
+        builder.setTitle("Hay Error")
+        builder.setMessage("tengo un error de logion")
+        builder.setPositiveButton("Aceptar",null)
+        val dialog: AlertDialog = builder.create()
+        dialog.show()
+    }
+     private fun login(){
+         val intent:Intent = Intent(this, InicioAdministradorActivity::class.java)
+         startActivity(intent)
+     }
 }

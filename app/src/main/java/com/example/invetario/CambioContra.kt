@@ -9,7 +9,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.provider.MediaStore
 import android.util.Log
-import com.google.firebase.storage.FirebaseStorage
+//import com.google.firebase.storage.FirebaseStorage
 import kotlinx.android.synthetic.main.activity_cambio_contra.*
 import kotlinx.android.synthetic.main.activity_menu_empleado.*
 import kotlinx.android.synthetic.main.activity_pedido_emp.*
@@ -37,9 +37,9 @@ class CambioContra : AppCompatActivity() {
 
         }
     }
-    var selectedPhotoUri: Uri? = null
+   // var selectedPhotoUri: Uri? = null
 
-    override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {
+    /*override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {
         super.onActivityResult(requestCode, resultCode, data)
 
         if (requestCode == 0 && resultCode == Activity.RESULT_OK && data != null){
@@ -55,14 +55,14 @@ class CambioContra : AppCompatActivity() {
 
         }
     }
-    //private fun subirImagenAFB() {
-      //  if (selectedPhotoUri == null) return
+    private fun subirImagenAFB() {
+       if (selectedPhotoUri == null) return
 
-        //val filename = UUID.randomUUID().toString()
-        //val ref = FirebaseStorage.getInstance().getReference("/imagenes/$filename")
-        //ref.putFile(selectedPhotoUri!!)
-          //  .addOnSuccessListener {
-            //    Log.d("CambioContra", "Se ha subido la imagen: ${it.metadata?.path}")
-            //}
-    //}
+        val filename = UUID.randomUUID().toString()
+        val ref = FirebaseStorage.getInstance().getReference("/imagenes/$filename")
+        ref.putFile(selectedPhotoUri!!)
+            .addOnSuccessListener {
+             Log.d("CambioContra", "Se ha subido la imagen: ${it.metadata?.path}")
+            }
+    }*/
 }
