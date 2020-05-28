@@ -22,10 +22,22 @@
             android:background="@drawable/panel_blanco_redondeado"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintVertical_bias="1.0">
+
+            <ImageView
+                android:id="@+id/biometricLoginButton"
+                android:layout_width="67dp"
+                android:layout_height="73dp"
+                android:layout_marginTop="4dp"
+                android:layout_marginEnd="32dp"
+                android:tint="#131313"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/btnIngresar"
+                app:layout_constraintTop_toBottomOf="@+id/btnOlvido"
+                app:srcCompat="?android:attr/fingerprintAuthDrawable" />
 
             <TextView
                 android:id="@+id/btnRegistro"
@@ -126,24 +138,13 @@
                 android:id="@+id/btnIngresar"
                 android:layout_width="234dp"
                 android:layout_height="0dp"
+                android:layout_marginStart="36dp"
                 android:layout_marginTop="12dp"
                 android:background="@drawable/panel_btn"
                 android:text="ingresar"
                 android:textColor="@color/colorWhite"
-                app:layout_constraintEnd_toStartOf="@+id/imageView2"
-                app:layout_constraintHorizontal_bias="0.662"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/btnOlvido" />
-
-            <ImageView
-                android:id="@+id/imageView2"
-                android:layout_width="64dp"
-                android:layout_height="81dp"
-                android:layout_marginEnd="32dp"
-                android:tint="#131313"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/btnOlvido"
-                app:srcCompat="?android:attr/fingerprintAuthDrawable" />
 
         </androidx.constraintlayout.widget.ConstraintLayout>
 

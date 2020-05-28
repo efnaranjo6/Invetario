@@ -9,13 +9,16 @@ import android.widget.EditText
 import android.widget.TextView
 import android.widget.Toast
 import androidx.appcompat.app.AlertDialog
+import androidx.biometric.BiometricPrompt
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.database.DatabaseReference
 import com.google.firebase.database.FirebaseDatabase
 import kotlinx.android.synthetic.main.activity_olvido_admin.*
 import kotlinx.android.synthetic.main.activity_registroadmin.*
+import java.util.concurrent.Executor
 
 class RegistroAdmin : AppCompatActivity() {
+    private val executor = Executor { }
     lateinit var txtNombre: EditText
     lateinit var txtApellido: EditText
     lateinit var txtCedula: EditText
@@ -23,7 +26,8 @@ class RegistroAdmin : AppCompatActivity() {
     lateinit var txtRepita: EditText
     lateinit var btnContinuar: Button
     override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState)
+
+         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_registroadmin)
         txtNombre = findViewById(R.id.txtNombre)
         txtApellido = findViewById(R.id.txtApellido)
@@ -33,9 +37,7 @@ class RegistroAdmin : AppCompatActivity() {
         btnContinuar = findViewById(R.id.btnContinuar)
         btnContinuar.setOnClickListener {
             guardarPersona()
-
-
-        }
+              }
     }
     private fun guardarPersona(){
         val nombre = txtNombre.text.toString().trim()
@@ -75,4 +77,8 @@ class RegistroAdmin : AppCompatActivity() {
          val intent:Intent = Intent(this, InicioAdministradorActivity::class.java)
          startActivity(intent)
      }
-}
+    }
+
+
+
+
