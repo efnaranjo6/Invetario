@@ -15,11 +15,11 @@
         app:layout_constraintTop_toTopOf="parent">
 
         <androidx.constraintlayout.widget.ConstraintLayout
-            android:id="@+id/btnVolver"
+            android:id="@+id/btnVolverR"
             android:layout_width="103dp"
             android:layout_height="44dp"
 
-            app:layout_constraintBottom_toTopOf="@+id/imageView"
+            app:layout_constraintBottom_toTopOf="@+id/constraintLayout"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="parent"
@@ -52,12 +52,13 @@
         <androidx.constraintlayout.widget.ConstraintLayout
             android:id="@+id/constraintLayout"
             android:layout_width="0dp"
-            android:layout_height="670dp"
+            android:layout_height="630dp"
             android:background="@drawable/panel_blanco_redondeado"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintHorizontal_bias="0.333"
             app:layout_constraintStart_toStartOf="parent">
+
             <TextView
                 android:id="@+id/lblU9"
                 android:layout_width="wrap_content"
@@ -68,7 +69,7 @@
                 android:textColor="@color/colorYellow"
                 android:textSize="20sp"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.19"
+                app:layout_constraintHorizontal_bias="0.245"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/txtContra" />
 
@@ -82,7 +83,7 @@
                 android:textColor="@color/colorYellow"
                 android:textSize="20sp"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.136"
+                app:layout_constraintHorizontal_bias="0.182"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/txtCorreo" />
 
@@ -96,7 +97,7 @@
                 android:textColor="@color/colorYellow"
                 android:textSize="20sp"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.12"
+                app:layout_constraintHorizontal_bias="0.16"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/txtApellido" />
 
@@ -110,14 +111,14 @@
                 android:textColor="@color/colorYellow"
                 android:textSize="20sp"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.162"
+                app:layout_constraintHorizontal_bias="0.218"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/txtCedula" />
 
             <EditText
                 android:id="@+id/txtContra"
-                android:layout_width="359dp"
-                android:layout_height="39dp"
+                android:layout_width="330dp"
+                android:layout_height="40dp"
                 android:background="@drawable/panel_txt_redondeado"
                 android:ems="10"
                 android:hint="Escriba aqui la contraseña"
@@ -125,13 +126,13 @@
                 android:padding="10sp"
                 android:textColor="#4A4A4A"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.509"
+                app:layout_constraintHorizontal_bias="0.506"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/lblU8" />
 
             <EditText
                 android:id="@+id/txtCorreo"
-                android:layout_width="362dp"
+                android:layout_width="329dp"
                 android:layout_height="39dp"
                 android:background="@drawable/panel_txt_redondeado"
                 android:ems="10"
@@ -146,8 +147,8 @@
 
             <EditText
                 android:id="@+id/txtCedula"
-                android:layout_width="355dp"
-                android:layout_height="39dp"
+                android:layout_width="330dp"
+                android:layout_height="43dp"
                 android:background="@drawable/panel_txt_redondeado"
                 android:ems="10"
                 android:hint="Escriba aqui la cedula"
@@ -161,8 +162,8 @@
 
             <EditText
                 android:id="@+id/txtApellido"
-                android:layout_width="360dp"
-                android:layout_height="39dp"
+                android:layout_width="333dp"
+                android:layout_height="43dp"
                 android:background="@drawable/panel_txt_redondeado"
                 android:ems="10"
                 android:hint="Escriba aqui el Apellido"
@@ -184,14 +185,14 @@
                 android:textColor="@color/colorYellow"
                 android:textSize="20sp"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.118"
+                app:layout_constraintHorizontal_bias="0.16"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/textCerrarSesion" />
 
             <EditText
                 android:id="@+id/txtNombre"
-                android:layout_width="357dp"
-                android:layout_height="39dp"
+                android:layout_width="336dp"
+                android:layout_height="42dp"
                 android:background="@drawable/panel_txt_redondeado"
                 android:ems="10"
                 android:hint="Escriba aqui el nombre"
@@ -213,7 +214,7 @@
                 android:textColor="@color/colorYellow"
                 android:textSize="20sp"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.123"
+                app:layout_constraintHorizontal_bias="0.165"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/textCerrarSesion" />
 
@@ -227,22 +228,22 @@
                 android:textSize="28sp"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.502"
+                app:layout_constraintHorizontal_bias="0.498"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintVertical_bias="0.025" />
+                app:layout_constraintVertical_bias="0.049" />
 
             <EditText
                 android:id="@+id/txtRepita"
-                android:layout_width="354dp"
-                android:layout_height="39dp"
+                android:layout_width="332dp"
+                android:layout_height="38dp"
                 android:background="@drawable/panel_txt_redondeado"
                 android:ems="10"
                 android:hint="Repita la contraeña"
                 android:inputType="textPersonName"
                 android:padding="10dp"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.448"
+                app:layout_constraintHorizontal_bias="0.506"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/lblU9" />
 

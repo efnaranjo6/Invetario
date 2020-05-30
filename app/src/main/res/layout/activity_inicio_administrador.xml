@@ -33,7 +33,7 @@
                 android:layout_height="73dp"
                 android:layout_marginTop="4dp"
                 android:layout_marginEnd="32dp"
-                android:tint="#131313"
+                android:tint="#040404"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toEndOf="@+id/btnIngresar"
                 app:layout_constraintTop_toBottomOf="@+id/btnOlvido"
@@ -53,8 +53,8 @@
 
             <EditText
                 android:id="@+id/txtCuenta"
-                android:layout_width="361dp"
-                android:layout_height="49dp"
+                android:layout_width="331dp"
+                android:layout_height="46dp"
                 android:background="@drawable/panel_txt_redondeado"
                 android:ems="10"
                 android:hint="Escriba aqui el usuario"
@@ -89,7 +89,7 @@
                 android:textColor="@color/colorYellow"
                 android:textSize="20sp"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.127"
+                app:layout_constraintHorizontal_bias="0.162"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/txtCuenta" />
 
@@ -99,33 +99,19 @@
                 android:layout_height="wrap_content"
 
                 android:layout_marginTop="8dp"
-                android:text="Correo elctronico"
+                android:text="Correo electronico"
                 android:textColor="@color/colorYellow"
                 android:textSize="20sp"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.152"
+                app:layout_constraintHorizontal_bias="0.204"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/textCerrarSesion" />
-
-            <EditText
-                android:id="@+id/txtContra"
-                android:layout_width="357dp"
-                android:layout_height="44dp"
-                android:background="@drawable/panel_txt_redondeado"
-                android:ems="10"
-                android:hint="Escriba aqui el usuario"
-                android:inputType="textPersonName"
-                android:padding="10sp"
-                android:textColor="#4A4A4A"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/lblU" />
 
             <TextView
                 android:id="@+id/btnOlvido"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="12dp"
+                android:layout_marginTop="16dp"
                 android:text="¿Olvido su contraseña ?"
                 android:textColor="@color/colorYellow"
                 android:textSize="20sp"
@@ -146,6 +132,19 @@
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/btnOlvido" />
 
+            <EditText
+                android:id="@+id/txtContra"
+                android:layout_width="327dp"
+                android:layout_height="45dp"
+                android:background="@drawable/panel_txt_redondeado"
+                android:ems="10"
+                android:hint="Escriba aqui la contraseña"
+                android:inputType="textPassword"
+                android:padding="10sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/lblU" />
+
         </androidx.constraintlayout.widget.ConstraintLayout>
 
         <ImageView
@@ -161,7 +160,7 @@
             app:srcCompat="@drawable/ic_social" />
 
         <androidx.constraintlayout.widget.ConstraintLayout
-            android:id="@+id/btnVolver"
+            android:id="@+id/btnVolverR"
             android:layout_width="103dp"
             android:layout_height="44dp"
             app:layout_constraintBottom_toTopOf="@+id/imageView"

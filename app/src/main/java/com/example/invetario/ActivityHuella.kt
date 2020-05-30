@@ -11,7 +11,7 @@ class ActivityHuella : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_huella)
 
-        btnVolver.setOnClickListener {
+        btnVolverR.setOnClickListener {
             val intent: Intent = Intent(this, MainActivity::class.java)
             startActivity(intent)
         }

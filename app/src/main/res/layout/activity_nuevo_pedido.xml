@@ -16,7 +16,7 @@
         app:layout_constraintTop_toTopOf="parent">
 
         <androidx.constraintlayout.widget.ConstraintLayout
-            android:id="@+id/btnVolver"
+            android:id="@+id/btnVolverR"
             android:layout_width="103dp"
             android:layout_height="44dp"
 
@@ -60,7 +60,7 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/btnVolver"
+            app:layout_constraintTop_toBottomOf="@+id/btnVolverR"
             app:layout_constraintVertical_bias="1.0">
 
             <TextView

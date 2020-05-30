@@ -14,7 +14,7 @@ class InicioEmpleado : AppCompatActivity() {
             val intent: Intent = Intent(this, RegistroAdmin::class.java)
             startActivity(intent)
         }
-        btnVolver.setOnClickListener {
+        btnVolverR.setOnClickListener {
             val intent: Intent = Intent(this, MainActivity::class.java)
             startActivity(intent)
         }

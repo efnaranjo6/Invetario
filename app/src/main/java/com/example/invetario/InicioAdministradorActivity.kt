@@ -1,17 +1,16 @@
 package com.example.invetario
 
+import android.annotation.SuppressLint
 import android.content.Intent
+import android.graphics.Color
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.os.Message
-import android.widget.Button
 import android.widget.Toast
 import androidx.biometric.BiometricManager
 import androidx.biometric.BiometricPrompt
 import androidx.core.content.ContextCompat
 import com.google.firebase.auth.FirebaseAuth
 import kotlinx.android.synthetic.main.activity_inicio_administrador.*
-import java.util.concurrent.Executor
 
 class InicioAdministradorActivity : AppCompatActivity() {
 
@@ -20,6 +19,7 @@ class InicioAdministradorActivity : AppCompatActivity() {
 
     private  lateinit var promptInfo: BiometricPrompt.PromptInfo
 
+    @SuppressLint("ResourceAsColor")
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_inicio_administrador)
@@ -27,12 +27,13 @@ class InicioAdministradorActivity : AppCompatActivity() {
         val executor = ContextCompat.getMainExecutor(this)
 
         checkhuella(biometricManager)
-        btnVolver.setOnClickListener {
+        btnVolverR.setOnClickListener {
             val intent: Intent = Intent(this, MainActivity::class.java)
             startActivity(intent)
         }
 
         biometricLoginButton.setOnClickListener {
+            biometricLoginButton.setColorFilter(Color.argb(100, 255, 193, 7));
             biometricPrompt = BiometricPrompt(this, executor,
              object  : BiometricPrompt.AuthenticationCallback(){
                  override fun onAuthenticationError(errorCode: Int, errString: CharSequence) {

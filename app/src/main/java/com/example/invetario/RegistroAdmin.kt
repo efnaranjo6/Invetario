@@ -1,19 +1,14 @@
 package com.example.invetario
 
-import android.content.Context
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
 import android.widget.EditText
-import android.widget.TextView
 import android.widget.Toast
 import androidx.appcompat.app.AlertDialog
-import androidx.biometric.BiometricPrompt
 import com.google.firebase.auth.FirebaseAuth
-import com.google.firebase.database.DatabaseReference
 import com.google.firebase.database.FirebaseDatabase
-import kotlinx.android.synthetic.main.activity_olvido_admin.*
 import kotlinx.android.synthetic.main.activity_registroadmin.*
 import java.util.concurrent.Executor
 
@@ -35,9 +30,15 @@ class RegistroAdmin : AppCompatActivity() {
         txtContra = findViewById(R.id.txtContra)
         txtRepita = findViewById(R.id.txtRepita)
         btnContinuar = findViewById(R.id.btnContinuar)
+
         btnContinuar.setOnClickListener {
             guardarPersona()
+
               }
+        btnVolverR.setOnClickListener{
+            val intent:Intent = Intent(this, InicioAdministradorActivity::class.java)
+            startActivity(intent)
+        }
     }
     private fun guardarPersona(){
         val nombre = txtNombre.text.toString().trim()
